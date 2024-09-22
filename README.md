@@ -1,6 +1,17 @@
 # work-item-handler-execute-sql
 jbpm business central custom task wok item handler   : execute sql . 3 input and 1 result
 
+```
+ mvn archetype:generate  
+  -DarchetypeGroupId=org.jbpm  
+   -DarchetypeArtifactId=jbpm-workitems-archetype 
+     -DarchetypeVersion=7.61.0.Final 
+       -DgroupId=org.acme  
+        -DartifactId=mywihexecutesql 
+          -Dversion=7.61.0-SNAPSHOT  
+            -DclassPrefix=MyWIHExecuteSql
+```
+
 ````
 `@Wid(widfile= "MyWIHExecuteSqlDefinitions.wid", name="MyWIHExecuteSqlDefinitions",
 displayName="WIHExecuteSqlDefinitions",
